@@ -42,8 +42,9 @@
         <section id="a-propos" class="about">
             <h3>A Propos</h3>
             <h1>Qui Suis-Je.</h1>
-            <p>Je suis un développeur frontend autodidacte de 20 ans. J’ai découvert ma passion pour la programmation après avoir découvert que mon frère en faisait. Ce qui me permet de rester à la pointe de mon domaine, c’est de rester à l’affût des changements technologiques à venir. En plus du codage, j’aime créer des projets parallèles, écrire des articles de blog et lire des livres. Quand je ne fais rien en rapport avec l’informatique, vous pouvez me trouver en train de profiter de mon temps avec ma famille et mes amis.</p>
-            <p><a href="https://www.instagram.com">Instagram</a> is my journal.</p>
+            <p>Je suis un jeune développeur fullstack de 21 ans passionné par le développement web et les nouvelles technologies. Depuis mes débuts dans le monde de la programmation, j'ai acquis des compétences solides tant en front-end qu'en back-end, me permettant de concevoir et de réaliser des applications web complètes et fonctionnelles.
+            J'ai travaillé sur plusieurs projets personnels et collaboré avec des équipes dynamiques pour développer des solutions innovantes. Parmi mes réalisations, j'ai contribué à la création de plateformes e-commerce, de systèmes et gestion de contenu.</p>
+            
         </section>
         
     </main>
@@ -99,34 +100,33 @@
     <div class="section">
         <div class="section-title">Sur Internet</div>
         <div class="links">
-            <a href="#" class="link">GitHub</a>
-            <a href="#" class="link">Fiverr</a>
-            <a href="#" class="link">LinkedIn</a>
-            <a href="#" class="link">Malt</a>
+            <a href="https://github.com/AddYQnm" class="link">GitHub</a>
+            <a href="https://www.fiverr.com/tiegoq?up_rollout=true" class="link">Fiverr</a>
+            <a href="www.linkedin.com/in/tiego-quenum-986054308" class="link">LinkedIn</a>
+            <a href="https://www.malt.fr/profile/tiegoquenum" class="link">Malt</a>
         </div>
     </div>
     
     <div class="section contact">
         <div class="section-title">Retrouvez Moi Ici</div>
-        <p>Le moyen le plus rapide de me contacter est de m'envoyer un message sur  <a href="#">LinkedIn</a> ou un message privé sur <a href="#">Instagram</a>.</p>
+        <p>Le moyen le plus rapide de me contacter est de m'envoyer un message sur  <a href="www.linkedin.com/in/tiego-quenum-986054308">LinkedIn</a> ou un message privé sur <a href="https://www.instagram.com/tiego_qnm/">Instagram</a>.</p>
         <p>Que vous ayez une question ou que vous vouliez simplement dire "Bonjour", je ferai de mon mieux pour vous répondre.</p>
     </div>
 
     <section id="contact" class="contact">
-    <div class="wrapper">
-      <form class="form">
-        <div class="pageTitle title">Contactez Moi </div>
-        <div class="secondaryTitle title">Rentrez directement en contact avec moi.</div>
-        <input type="text" class="name formEntry" placeholder="Nom" />
-        <input type="text" class="email formEntry" placeholder="Email"/>
-        <textarea class="message formEntry" placeholder="Message"></textarea>
-        <button class="submit formEntry" onclick="thanks()">Submit</button>
-      </form>
-    </div>
+      <div class="wrapper">
+          <form class="form" action="your-server-endpoint" method="post">
+              <div class="pageTitle title">Contactez Moi</div>
+              <div class="secondaryTitle title">Rentrez directement en contact avec moi.</div>
+              <input type="text" class="name formEntry" name="name" placeholder="Nom" required />
+              <input type="email" class="email formEntry" name="email" placeholder="Email" required/>
+              <textarea class="message formEntry" name="message" placeholder="Message" required></textarea>
+              <button type="submit" class="submit formEntry">Submit</button>
+          </form>
+      </div>
   </section>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
+    <script src="server.js"></script>
 </body>
 </html>
-

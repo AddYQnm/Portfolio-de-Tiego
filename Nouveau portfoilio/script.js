@@ -145,3 +145,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+document.querySelector('.form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche la soumission par défaut du formulaire
+    alert('Merci pour votre message!');
+    // Ajoutez ici du code pour envoyer les données du formulaire si nécessaire
+});
